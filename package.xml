@@ -42,6 +42,7 @@
   <!-- Use test_depend for packages you need only for testing: -->
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>roscpp</buildtool_depend>
 
   <run_depend>controller_manager</run_depend>
   <run_depend>effort_controllers</run_depend>
