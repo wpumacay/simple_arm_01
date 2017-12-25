@@ -10,7 +10,6 @@ add_definitions(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
 	std_msgs
 	message_generation
-	controller_manager
 	roscpp
 )
 
@@ -55,10 +54,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-#add_service_files(
-#   FILES
-#   GoToPosition.srv
-#)
+add_service_files(
+   FILES
+   GoToPosition.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -68,10 +67,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-#generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-#)
+generate_messages(
+   DEPENDENCIES
+   std_msgs  # Or other packages containing msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
