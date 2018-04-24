@@ -53,6 +53,9 @@
   <run_depend>joint_state_controller</run_depend>
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
   <run_depend>message_runtime</run_depend>
   <run_depend>xacro</run_depend>
 

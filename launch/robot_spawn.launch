@@ -17,7 +17,7 @@
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
   args="-urdf -param robot_description -x 0 -y 0 -z 0 -R 0 -P 0 -Y 0 -model simple_arm"/>
 
-  <node name="arm_mover" type="arm_mover.py" pkg="simple_arm">
+<!--   <node name="arm_mover" type="arm_mover.py" pkg="simple_arm">
 
     <rosparam>
       min_joint_1_angle: 0
@@ -26,6 +26,12 @@
       max_joint_2_angle: 1.57
     </rosparam>
 
-  </node>
+  </node> -->
+
+  <!--test GUI-->
+  <!-- <node name="test_qt_binding" type="test_qt_binding.py" pkg="simple_arm"/> -->
+
+  <!--simple mover with UI-->
+  <node name="simple_mover_ui" type="simple_mover_ui.py" pkg="simple_arm"/>
 
 </launch>
