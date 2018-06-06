@@ -20,7 +20,7 @@ class LArmMover :
 			print 'The arm is currently executing a command, just wait a little.'
 			rospy.logwarn( 'The arm is currently moving. Go back in a minute, please' )
 
-			return GoToPositionResponse( -1 )
+			return GoToPositionResponse( 0 )
 
 		else :
 			
